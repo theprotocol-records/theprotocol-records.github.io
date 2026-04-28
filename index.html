@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,7 +12,6 @@
             --gray: #1a1a1a;
             --text: #e0e0e0;
             --border: #333;
-            --disabled: #444;
         }
 
         body {
@@ -84,26 +83,30 @@
         .btn {
             background: var(--gray);
             border: 1px solid var(--border);
-            color: #666;
+            color: #fff;
             padding: 20px;
             display: block;
             text-decoration: none;
             border-radius: 2px;
             margin-bottom: 15px;
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
             font-family: 'Cinzel', serif;
             font-size: 0.9rem;
             letter-spacing: 2px;
             position: relative;
-            cursor: not-allowed;
-            pointer-events: none;
         }
 
-        .coming-soon-tag {
-            display: block;
-            font-size: 0.6rem;
-            color: var(--gold);
-            margin-top: 5px;
-            letter-spacing: 2px;
+        .btn:hover {
+            border-color: var(--gold);
+            background: #222;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+        }
+
+        .btn-protocol {
+            border-left: 4px solid var(--gold);
+            background: linear-gradient(90deg, #1f1a0d 0%, #1a1a1a 100%);
+            font-weight: 700;
         }
 
         .footer {
@@ -118,32 +121,18 @@
 </head>
 <body>
     <div class="container">
-        <img src="data/logo.png" alt="The Protocol Logo" class="logo">
+        <img src="data/logo.jpg" alt="The Protocol Logo" class="logo">
         
         <h1>THE PROTOCOL</h1>
-        <div class="tagline">Deciphering the records of greatness.</div>
+        <div class="tagline">Success is a pattern. Decode it.</div>
 
-        <div class="section-label">Active Protocols</div>
-        
-        <div class="btn">
-            The Wealth Protocol
-            <span class="coming-soon-tag">COMING SOON</span>
-        </div>
-        <div class="btn">
-            The Stoic Protocol
-            <span class="coming-soon-tag">COMING SOON</span>
-        </div>
+        <div class="section-label">The Wealth Protocol</div>
+        <a href="https://www.binance.com/register?ref=THEPROTOCOL" target="_blank" class="btn btn-protocol">Binance Global Exchange</a>
+        <a href="https://www.amazon.com/dp/0451205361?tag=theprotocol0b-20" target="_blank" class="btn">The Richest Man in Babylon</a>
 
-        <div class="section-label">Verified Resources</div>
-        
-        <div class="btn">
-            The 48 Laws of Power
-            <span class="coming-soon-tag">COMING SOON</span>
-        </div>
-        <div class="btn">
-            Meditations: Deluxe Edition
-            <span class="coming-soon-tag">COMING SOON</span>
-        </div>
+        <div class="section-label">The Strategy Archives</div>
+        <a href="https://www.amazon.com/dp/0140280197?tag=theprotocol0b-20" target="_blank" class="btn">The 48 Laws of Power</a>
+        <a href="https://www.amazon.com/dp/0140441802?tag=theprotocol0b-20" target="_blank" class="btn">Meditations: Deluxe Edition</a>
 
         <div class="footer">
             ESTABLISHED MMXXVI<br>
