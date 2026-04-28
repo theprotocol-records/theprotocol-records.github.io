@@ -1,0 +1,154 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Protocol | Archives</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gold: #d4af37;
+            --dark: #0d0d0d;
+            --gray: #1a1a1a;
+            --text: #e0e0e0;
+            --border: #333;
+            --disabled: #444;
+        }
+
+        body {
+            background-color: var(--dark);
+            background-image: radial-gradient(circle at center, #1a1a1a 0%, #0d0d0d 100%);
+            color: var(--text);
+            font-family: 'Playfair Display', serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 60px 20px;
+            margin: 0;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 450px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .logo {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            border: 2px solid var(--gold);
+            margin-bottom: 25px;
+            box-shadow: 0 0 30px rgba(212, 175, 55, 0.15);
+            object-fit: cover;
+        }
+
+        h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 1.8rem;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin: 0 0 10px 0;
+        }
+
+        .tagline {
+            font-style: italic;
+            color: #888;
+            margin-bottom: 45px;
+            font-size: 1rem;
+            letter-spacing: 1px;
+        }
+
+        .section-label {
+            font-family: 'Cinzel', serif;
+            font-size: 0.75rem;
+            letter-spacing: 4px;
+            color: var(--gold);
+            text-transform: uppercase;
+            margin: 40px 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .section-label::before, .section-label::after {
+            content: "";
+            flex: 1;
+            height: 1px;
+            background: linear-gradient(to right, transparent, var(--border), transparent);
+            margin: 0 15px;
+        }
+
+        .btn {
+            background: var(--gray);
+            border: 1px solid var(--border);
+            color: #666;
+            padding: 20px;
+            display: block;
+            text-decoration: none;
+            border-radius: 2px;
+            margin-bottom: 15px;
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+            position: relative;
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+
+        .coming-soon-tag {
+            display: block;
+            font-size: 0.6rem;
+            color: var(--gold);
+            margin-top: 5px;
+            letter-spacing: 2px;
+        }
+
+        .footer {
+            margin-top: 80px;
+            font-family: 'Cinzel', serif;
+            font-size: 0.65rem;
+            color: #444;
+            letter-spacing: 3px;
+            line-height: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="data/logo.png" alt="The Protocol Logo" class="logo">
+        
+        <h1>THE PROTOCOL</h1>
+        <div class="tagline">Deciphering the records of greatness.</div>
+
+        <div class="section-label">Active Protocols</div>
+        
+        <div class="btn">
+            The Wealth Protocol
+            <span class="coming-soon-tag">COMING SOON</span>
+        </div>
+        <div class="btn">
+            The Stoic Protocol
+            <span class="coming-soon-tag">COMING SOON</span>
+        </div>
+
+        <div class="section-label">Verified Resources</div>
+        
+        <div class="btn">
+            The 48 Laws of Power
+            <span class="coming-soon-tag">COMING SOON</span>
+        </div>
+        <div class="btn">
+            Meditations: Deluxe Edition
+            <span class="coming-soon-tag">COMING SOON</span>
+        </div>
+
+        <div class="footer">
+            ESTABLISHED MMXXVI<br>
+            ALL RECORDS VERIFIED • NON-NEGOTIABLE GROWTH
+        </div>
+    </div>
+</body>
+</html>
